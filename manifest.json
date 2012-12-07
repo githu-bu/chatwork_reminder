@@ -1,0 +1,13 @@
+{
+	"name": "Chatwork Reminder",
+	"version": "0.1",
+	"manifest_version": 2,
+	"description": "チャットワークのリマインダーのサンプル",
+	"content_scripts": [
+		{
+		"run_at": "document_idle",
+		"js": ["reminder.js"],
+		"matches": [ "https://www.chatwork.com/*" ]
+		}
+	]
+}
